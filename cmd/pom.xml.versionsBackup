@@ -1,0 +1,221 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>net.encdec</groupId>
+  <artifactId>encdec-cmd</artifactId>
+  <version>1.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>encdec-cmd</name>
+  <description>encdec command line tool for encryption local files and object data</description>
+  <url>https://github.com/encdec/cmd</url>
+
+	<licenses>
+		<license>
+			<name>MIT License</name>
+			<url>https://opensource.org/licenses/mit-license.php</url>
+		</license>
+	</licenses>
+	
+	<developers>
+		<developer>
+		<name>Josef Simmons</name>
+		<email>jsimmons@encdec.net</email>
+		<organization>net.encdec</organization>
+		<organizationUrl>https://www.encdec.net</organizationUrl>
+		</developer>
+	</developers>
+	
+	<scm>
+		<connection>scm:git:git://github.com/encdec/cmd.git</connection>
+		<developerConnection>scm:git:ssh//github.com:encdec/cmd.git</developerConnection>
+		<url>https://github.com/encdec/cmd</url>
+	</scm>
+	
+	<properties>
+	    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	    <maven.compiler.source>1.8</maven.compiler.source>
+	    <maven.compiler.target>1.8</maven.compiler.target>
+  	</properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+	<dependency>
+		<groupId>commons-io</groupId>
+		<artifactId>commons-io</artifactId>
+		<version>2.7</version>
+	</dependency>
+
+	<dependency>
+	    <groupId>org.apache.commons</groupId>
+	    <artifactId>commons-lang3</artifactId>
+	    <version>3.5</version>
+	</dependency>
+	
+	<dependency>
+    	<groupId>log4j</groupId>
+    	<artifactId>log4j</artifactId>
+    	<version>1.2.17</version>
+	</dependency>
+  </dependencies>
+  
+  	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
+	
+    <build>
+	<finalName>encdec-cmd-${version}</finalName>
+	<plugins>
+	<plugin>
+		<groupId>org.apache.maven.surefire</groupId>
+		<artifactId>maven-surefire-plugin</artifactId>
+		<version>2.22.0</version>
+		<configuration>
+		<properties>
+		<property>
+		<name>junit</name>
+		<value>true</value>
+		</property>
+		</properties>
+		</configuration>
+	</plugin>
+
+	<plugin>
+		<groupId>org.jacoco</groupId>
+		<artifactId>jacoco-maven-plugin</artifactId>
+		<version>0.8.5</version>
+		<configuration>
+		<append>true</append>
+		</configuration>
+		<executions>
+		<execution>
+		<goals>
+		<goal>prepare-agent</goal>
+		</goals>
+		</execution>
+		<execution>
+		<id>post-unit-test</id>
+		<phase>test</phase>
+		<goals>
+		<goal>report</goal>
+		</goals>
+		</execution>
+		</executions>
+	</plugin>
+	
+	<plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-jar-plugin</artifactId>
+		<configuration>
+		<archive>
+			<manifest>
+				<mainClass>net.encdec.edcmd.code.MAIN</mainClass>
+				<addClasspath>true</addClasspath>
+			</manifest>
+		</archive>
+		</configuration>
+	</plugin>
+	
+	<plugin>
+    	<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-shade-plugin</artifactId>
+		<version>3.2.4</version>
+		<executions>
+			<execution>
+			<phase>package</phase>
+			<goals>
+			<goal>shade</goal>
+			</goals>
+			</execution>
+		</executions>
+	</plugin>
+	
+	<plugin>
+      <groupId>org.sonatype.plugins</groupId>
+      <artifactId>nexus-staging-maven-plugin</artifactId>
+      <version>1.6.7</version>
+      <extensions>true</extensions>
+      <configuration>
+        <serverId>ossrh</serverId>
+        <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+        <autoReleaseAfterClose>true</autoReleaseAfterClose>
+      </configuration>
+    </plugin>
+	
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-source-plugin</artifactId>
+      <version>2.2.1</version>
+      <executions>
+        <execution>
+          <id>attach-sources</id>
+          <goals>
+            <goal>jar-no-fork</goal>
+          </goals>
+        </execution>
+      </executions>
+    </plugin>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-javadoc-plugin</artifactId>
+      <version>2.9.1</version>
+      <executions>
+        <execution>
+          <id>attach-javadocs</id>
+          <goals>
+            <goal>jar</goal>
+          </goals>
+        </execution>
+      </executions>
+    </plugin>
+    
+     <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <version>1.7</version>
+        <executions>           
+            <execution>             
+                <id>remove-old-artifacts</id>             
+                <phase>package</phase>             
+                <goals>               
+                    <goal>remove-project-artifact</goal>             
+                </goals>            
+                <configuration>  
+                    <removeAll>true</removeAll><!-- remove all versions of built artifacts including all versions.  Install phase will regenerate -->             
+                </configuration>          
+                </execution>         
+        </executions>             
+    </plugin>   
+    
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-gpg-plugin</artifactId>
+      <version>1.5</version>
+      <executions>
+        <execution>
+          <id>sign-artifacts</id>
+          <phase>verify</phase>
+          <goals>
+            <goal>sign</goal>
+          </goals>
+        </execution>
+      </executions>
+    </plugin>
+	</plugins>
+	</build>
+
+</project>

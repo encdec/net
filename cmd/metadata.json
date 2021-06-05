@@ -1,0 +1,17 @@
+{
+	"name":"encdec-cmd",
+	"tname":"encdec-cmd",
+	"version":"1.0.1",
+	"author":"encdec",
+	"summary":"encdec cmd line service",
+	"license":"none",
+	"source":"git@github.com:encdec/edcmd.git",
+	"project_page":"https://github.com/encdec/edcmd.git",
+	"issues_url":"",
+	"dependencies" : [
+		{
+		"version_range":">= 1.0",
+		"name":"encdec-cmd"
+		}
+	]
+}

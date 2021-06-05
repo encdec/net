@@ -1,0 +1,17 @@
+{
+	"name":"eddsk",
+	"tname":"eddsk",
+	"version":"1.0.1",
+	"author":"encdec",
+	"summary":"encdec dsk line service",
+	"license":"none",
+	"source":"git@github.com:jsimmo14/eddsk.git",
+	"project_page":"https://github.com/jsimmo14/eddsk.git",
+	"issues_url":"",
+	"dependencies" : [
+		{
+		"version_range":">= 1.0",
+		"name":"eddsk"
+		}
+	]
+}
