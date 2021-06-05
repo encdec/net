@@ -9,7 +9,7 @@
 
   <name>edcmd</name>
   <description>encdec command line tool for encryption of local files and object data</description>
-  <url>https://github.com/encdec/edcmd</url>
+  <url>https://github.com/encdec/net</url>
 
 	<licenses>
 		<license>
@@ -28,9 +28,9 @@
 	</developers>
 	
 	<scm>
-		<connection>scm:git:git://github.com/encdec/edcmd.git</connection>
-		<developerConnection>scm:git:ssh//github.com:encdec/edcmd.git</developerConnection>
-		<url>https://github.com/encdec/edcmd</url>
+		<connection>scm:git:git://github.com/encdec/net.git</connection>
+		<developerConnection>scm:git:ssh//github.com:encdec/net.git</developerConnection>
+		<url>https://github.com/encdec/net.git</url>
 	</scm>
 	
 	<properties>

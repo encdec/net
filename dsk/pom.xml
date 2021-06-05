@@ -9,7 +9,7 @@
 
   <name>eddsk</name>
   <description>encdec desktop tool for encryption of local files and object data</description>
-  <url>https://github.com/encdec/eddsk</url>
+  <url>https://github.com/encdec/net</url>
 
 	<licenses>
 		<license>
@@ -26,6 +26,12 @@
 		<organizationUrl>https://www.encdec.net</organizationUrl>
 		</developer>
 	</developers>
+	
+	<scm>
+		<connection>scm:git:git://github.com/encdec/net.git</connection>
+		<developerConnection>scm:git:ssh//github.com:encdec/net.git</developerConnection>
+		<url>https://github.com/encdec/net.git</url>
+	</scm>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
