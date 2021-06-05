@@ -4,7 +4,7 @@
   <groupId>net.encdec</groupId>
   <artifactId>eddsk</artifactId>
   <name>eddsk</name>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>1.0.1</version>
   <description>encdec desktop tool for encryption of local files and object data</description>
   <url>https://github.com/encdec/net</url>
   <developers>
@@ -69,7 +69,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>net.encdec.edcmd.code.MAIN</mainClass>
+              <mainClass>net.encdec.eddsk.code.MAIN</mainClass>
               <addClasspath>true</addClasspath>
             </manifest>
           </archive>
