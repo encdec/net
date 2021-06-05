@@ -54,7 +54,7 @@ If running the edcmd-{version}.jar file from the command line, below are argumen
 run successfully.
 
 Syntax
-$DRIVE: java -jar /path/to/jar/file/edcmd-{version}.jar -[option] [argument]
+$DRIVE: java -jar /path/to/jar/file/edcmd-{version}.jar -option argument
 
 Options
 --help
