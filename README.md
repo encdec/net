@@ -1,7 +1,9 @@
 Desktop
+
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/net.encdec/eddsk/badge.svg)](https://maven-badges.herokuapp.com/maven-central/net.encdec/eddsk)
 
 Command Line
+
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/net.encdec/edcmd/badge.svg)](https://maven-badges.herokuapp.com/maven-central/net.encdec/edcmd)
 
 Thank you for using EncDec!
