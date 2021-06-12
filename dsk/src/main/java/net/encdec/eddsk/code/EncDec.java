@@ -1,6 +1,5 @@
 package net.encdec.eddsk.code;
 
-
 import java.io.BufferedInputStream;
 import java.io.DataInputStream;
 import java.io.File;
@@ -278,8 +277,6 @@ public class EncDec {
 	 *            The output folder where the new processed file will be saved
 	 * @param eMode
 	 *            The encryption mode (true for encryption, false for decryption)
-	 * @param Console
-	 *            output switch (true for print, false for no print)
 	 */
 	// process file for encryption or decryption
 	public String[] process(File processFile, String pw, String newFn, String outDir, boolean eMode)
