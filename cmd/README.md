@@ -95,10 +95,11 @@ Ex. -noprint
 ---- END COMMAND LINE ----
 
 ---- JAVA DEPENDENCY ----
-To use as a java dependency, load the .jar load into your java development environment as a 
-maven dependency or external jar resource. Next, create or go to your desired class file 
-and import the EncDec class from the code package (Ex. import code.EncDec;). Call the 'process' 
-method from the EncDec class and pass it the correct arguments.
+To use as a java dependency, load the edcmd dependency .jar into your java development 
+environment as an maven dependency or external jar resource. Next, create or go to your 
+desired class file and import the EncDec class from the code package 
+(Ex. import net.encdec.edcmd.code.EncDec;). Call the 'process' method from the 
+EncDec class and pass it the correct arguments.
 
 Example:
 EncDec ed = new EncDec();
