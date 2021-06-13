@@ -102,8 +102,8 @@ Ex. -noprint
 
 ---- JAVA DEPENDENCY ----
 To use as a java dependency, load the .jar load into your java development environment as an 
-external jar resource. Next, create or go to your desired class file and import 
-the EncDec class from the code package (Ex. import code.EncDec;). Call the 'process' 
+maven dependency or an external jar resource. Next, create or go to your desired class file 
+and import the EncDec class from the code package (Ex. import code.EncDec;). Call the 'process' 
 method from the EncDec class and pass it the correct arguments.
 
 Example:
