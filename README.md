@@ -68,12 +68,12 @@ Provides a welcome message, basic instructions, and a list options with argument
 No argument needed
 
 -file
-File path argument for the program to perform an encryption/decrption task
+File path argument for the program to perform an encryption/decryption task
 Required, use quotes if path contains spaces
 Ex. -file "/full/path/to/file/or/folder"
 
 -passocde
-Passcode used for the encryption/decrption algorithm
+Passcode used for the encryption/decryption algorithm
 Required, at least 8 chars, special chars limited (!@#$%^&*_=+?/,.;:-)
 Ex. -passcode abcd1234
 
@@ -83,7 +83,7 @@ Not required. For Encrypt Mode only, default name='file' if not set, use quotes 
 Ex. -name "My New File" **no extention**
 
 -mode
-Mode selection to perform an encryption/decrption task
+Mode selection to perform an encryption/decryption task
 Required, only 2 inputs (enc for Encryption, dec for Decryption)
 Ex. -mode enc
 
