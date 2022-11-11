@@ -11,11 +11,12 @@ chaining (CBC) to create a secure encryption output of a given file or text sour
 Review the source code included to examine these methods closer in their usage.
 
 DEPENDENCIES  
-Operations System (OS):
-Windows (XP, 7, Vista, 8, or 10)
-Application Programs:
-Windows Powershell 2.0
-Java 7 or higher
+Operations System (OS):  
+Windows (XP, 7, Vista, 8, or 10)  
+  
+Application Programs:  
+Windows Powershell 2.0  
+Java 7 or higher  
 
 PROGRAM STARTUP  
 On startup, the EncDec program will create five folders onto your file system in the 
