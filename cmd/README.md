@@ -11,11 +11,12 @@ chaining (CBC) to create a secure encryption output of a given file or text sour
 Review the source code included to examine these methods closer in their usage.
 
 DEPENDENCIES  
-Operations System (OS):
-Windows (XP, 7, Vista, 8, or 10)
-Application Programs:
-Windows Powershell 2.0
-Java 7 or higher
+Operations System (OS):  
+Windows (XP, 7, Vista, 8, or 10)  
+  
+Application Programs:  
+Windows Powershell 2.0  
+Java 7 or higher  
 
 PROGRAM STARTUP  
 On startup, the EncDec program will create five folders onto your file system in the 
@@ -25,16 +26,21 @@ folders are the subfolders that will store your created files. The Downloads fol
 for retrieving inbox and outbox files (See Registration Section). The Receipts folder 
 is for downloading your receipts after registration purchases. EncDec also creates a 
 configuration folder, 'edconfig', in your default My Documents file structure. Do not 
-alter this folder as you may corrupt you desktop program settings.
+alter this folder as you may corrupt you desktop program settings.  
 
 ---- GUI ----  
-Executable Programs: EncDec.exe or eddsk-{version}.jar
+Executable Programs: EncDec.exe or eddsk-{version}.jar  
+
+UPLOAD FILE  
+Press the Upload button, then search your OS file system for the desired 
+file to encrypt / decrypt. For convenience, you can also drag and drop the file into 
+the EncDec GUI. 
 
 SET MODE  
 Set the mode you desire using the Switch Mode button (Encrypt or Decrypt, defaults 
 to Encrypt on startup). Upload a file or folder you want to process in the first textbox using 
 the Upload button. The upload textbox is disabled to prevent changes to the file 
-location obtained through your OS system through the upload button.
+location obtained through your OS system through the upload button.  
 
 ENCRYPT MODE  
 Enter a passcode string of at least 8 alphanumeric chars to encrypt the file. Some 
@@ -45,7 +51,7 @@ you can give the new encrypted file a new file name. If not, the file name will
 default to the name 'file'. Click the Encrypt File button. If successful, the program 
 will produce a success message in green color at the bottom of the panel. It will also 
 print the full location of the new file(s) in the bottom disabled textbox. You may copy this 
-location and paste it into a file explorer window to retrieve your new file output.
+location and paste it into a file explorer window to retrieve your new file output.  
 
 DECRYPT MODE  
 Enter the known alphanumeric passcode that was used to encrypt the file(s). The New 
@@ -58,10 +64,10 @@ into a file explorer window to retrieve your new file output.
 
 ---- COMMAND LINE ----  
 If running the edcmd-{version}.jar file from the command line, below are arguments for EncDec to 
-run successfully.
+run successfully.  
 
 Syntax  
-$DRIVE: java -jar /path/to/jar/file/edcmd-{version}.jar -option argument
+$DRIVE: java -jar /path/to/jar/file/edcmd-{version}.jar -option argument  
 
 Options  
 --help  
