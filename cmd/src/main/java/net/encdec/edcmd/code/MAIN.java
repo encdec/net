@@ -23,12 +23,12 @@ public class MAIN {
 			System.out.println(
 					"The EncDec program performs 2 primary tasks against your files: Encryption and Decryption. "
 							+ "To perform these tasks, EncDec requires 3 user input options for both methods. These input options are a file or folder, "
-							+ "passode, and mode. 3 non-requried options include 'new file name' (encryption only), 'new processed file location', and "
+							+ "passcode, and mode. 3 non-requried options include 'new file name' (encryption only), 'new processed file location', and "
 							+ "'no print output'. The EncDec program .jar file can also be used as a dependency within "
-							+ "another java development program. As a dependency program, the EncDec.java file can run the 'process' method independently given "
+							+ "another java development program. As a dependency program, the EncDec.java class file can run the 'process' method independently given "
 							+ "the correct fields. To run via command line, you can provide the input options requested onto "
 							+ "the display panel. Below are a list of command line input options and corresponding arguments to "
-							+ "successfully run the program within and Windows cmd or Linux shell.\r\n");
+							+ "successfully run the program within a Windows cmd prompt or Linux shell.\r\n");
 			System.out.println(
 					"Syntax\r\n" + "$DRIVE:java -jar /path/to/jar/file/encdec-1.0.1.jar -[option] [argument]\r\n");
 			System.out.println("Options\r\n" + "--help \r\n"
